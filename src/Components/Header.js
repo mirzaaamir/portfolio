@@ -1,7 +1,8 @@
 import { Grid } from "@mui/material";
+import Image from "next/image";
 import React from "react";
 import ListMenu from "./ListMenu";
-
+import second from "../../public/Frame3.svg";
 const Header = () => {
   return (
     <>
@@ -11,7 +12,8 @@ const Header = () => {
         justifyContent="flex-start"
         alignItems="stretch"
       >
-        <Grid item direction="row">
+        <Image src={second} alt="background Image" width={1312} height={844}/>
+        {/* <Grid item direction="row">
           <ListMenu />
         </Grid>
         <Grid item direction="row" display="flex" justifyContent="center">
@@ -26,7 +28,7 @@ const Header = () => {
         </Grid>
         <Grid item direction="row" display="flex" justifyContent="flex-end">
           Follow me |
-        </Grid>
+        </Grid> */}
       </Grid>
     </>
   );
