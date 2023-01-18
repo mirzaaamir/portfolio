@@ -1,6 +1,29 @@
 .services {
-  background: linear-gradient(180deg, #363948 0%, #2A2D3A 100%);
+  background: linear-gradient(180deg, #363948 0%, #2a2d3a 100%);
+  padding: 0px 4rem
   /* background-color: #2a2d3a; */
+}
+.headingOne {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 113px;
+  color: #ffffff;
+  text-decoration-line: underline;
+}
+.servicesCard {
+  background: #363948;
+  border-radius: 4px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+  padding: 43px 0px 24px;
+  /* min-width: 300px;
+  min-height: 300px; */
+  /* width: 384.88px;
+  height: 513.13px; */
+  gap: 80px;
 }
 .skills {
   background: linear-gradient(
