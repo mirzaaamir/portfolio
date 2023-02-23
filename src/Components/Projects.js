@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import styles from "@/styles/Home.module.css";
-import demoImage from "../../public/mediap1.svg";
+import demoImage from "../../public/demoImage.jpg";
 import Image from "next/image";
 const Projects = () => {
   return (
