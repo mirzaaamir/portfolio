@@ -1,13 +1,30 @@
+.landingImage {
+  height: 500px;
+  width: 100%;
+  z-index: 0;
+}
+.landingText {
+  position: relative;
+  z-index: 1;
+}
+.headerTop {
+  position: absolute;
+}
+.headerEffect {
+  background: #9747ff;
+  filter: blur(100px);
+}
 .services {
   background: linear-gradient(180deg, #363948 0%, #2a2d3a 100%);
-  padding: 0px 4rem
+  padding: 0px 4rem;
   /* background-color: #2a2d3a; */
 }
 .headingOne {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 96px;
+  /* font-size: 96px; */
+  font-size: 56px;
   line-height: 113px;
   color: #ffffff;
   text-decoration-line: underline;
@@ -34,6 +51,41 @@
     #2a2d3a 71.73%,
     #666976 97.65%
   );
+}
+.projects {
+  background: #2a2d3a;
+  padding: 12px;
+}
+.skillsCard {
+  background: #363948;
+
+  box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15),
+    0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  /* transform: matrix(0.71, -0.7, 0.7, 0.71, 0, 0); */
+  min-height: 163.19243153225585px;
+  min-width: 163.1968450472573px;
+}
+.projectsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+
+  /* max-width: 544px;
+  max-height: 497px; */
+
+  background: #363948;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.transform {
+  transform: matrix(0.71, -0.7, 0.7, 0.71, 0, 0);
 }
 .main {
   display: flex;
