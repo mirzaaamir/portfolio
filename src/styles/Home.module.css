@@ -14,6 +14,10 @@
   background: #9747ff;
   filter: blur(100px);
 }
+.contacts{
+  background: #363948;
+  padding: 24px 24px 20px 40px;
+}
 .services {
   background: linear-gradient(180deg, #363948 0%, #2a2d3a 100%);
   padding: 0px 4rem;
@@ -36,8 +40,8 @@
   flex-direction: column;
   align-items: flex-start; */
   padding: 43px 0px 24px;
-  /* min-width: 300px;
-  min-height: 300px; */
+  min-width: 300px;
+  min-height: 300px;
   /* width: 384.88px;
   height: 513.13px; */
   gap: 80px;

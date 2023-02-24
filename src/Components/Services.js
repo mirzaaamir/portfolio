@@ -50,8 +50,8 @@ const Services = () => {
       >
        Services
       </Typography>
-      <Grid container columnGap={{ sm: 4, md: 4,lg:4,xl:8 }} rowGap={4} columns={{ sm: 6, md: 8,lg:8,xl:8 }} sx={{margin:"12px 0px"}}>
-        <Card className={styles.servicesCard}>
+      <Grid container columnGap={{ sm: 4, md: 4,lg:4,xl:8 }} rowGap={4} columns={{ sm: 6, md: 12,lg:12,xl:12 }} sx={{margin:"12px 0px"}}>
+        <Card   className={styles.servicesCard}>
           <CardContent>
             <Typography
               sx={{ fontSize: 14 }}
@@ -176,6 +176,7 @@ const Services = () => {
             <Button size="small">Learn More</Button>
           </CardActions>
         </Card>
+       
       </Grid>
     </Grid>
   );
