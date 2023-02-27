@@ -15,7 +15,8 @@ const Header = () => {
         direction="column"
         justifyContent="flex-start"
         alignItems="stretch"
-        padding={4}
+
+        // padding={4}
       >
         <Box
           sx={{
@@ -23,6 +24,8 @@ const Header = () => {
             height: "500px",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
+            display: "grid",
+            gridTemplateColumns: "1fr 80px",
           }}
         >
           <Grid
@@ -32,10 +35,10 @@ const Header = () => {
             // alignItems="center"
             // columnSpacing={4}
           >
-            <Box>
+            <Box padding={4}>
               <Grid
                 container
-                spacing={{ xs: 4, md: 16 }}
+                spacing={{ xs: 2, md: 16 }}
                 columns={{ xs: 4, sm: 8, md: 12 }}
               >
                 <Grid item>Services</Grid>
@@ -45,7 +48,8 @@ const Header = () => {
                 <Grid item>Contact</Grid>
               </Grid>
             </Box>
-            <Box marginTop={12} marginBottom={12}>
+
+            <Box marginTop={6} marginBottom={4}>
               <Grid container direction="column">
                 <Grid item>
                   <Typography display="flex" justifyContent="center">
@@ -59,7 +63,22 @@ const Header = () => {
                 </Grid>
               </Grid>
             </Box>
-            <Box>
+            <Box marginTop={4} marginBottom={2}>
+              <Grid container direction="column">
+                <Grid item paddingLeft={4}>
+                  <Typography display="flex" justifyContent="center">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry of
+                    standard dummy text ever since the 1500s, when an unknown
+                    {/* printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s */}
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Box>
+            {/* <Box>
               <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={2}>
                 <Box gridColumn="span 4">
                   <Image
@@ -118,7 +137,20 @@ const Header = () => {
                   </Box>
                 </Box>
               </Box>
-            </Box>
+            </Box> */}
+          </Grid>
+          <Grid
+            container
+            direction="column"
+            display="flex"
+            // alignSelf="center"
+            width={400}
+            height={400}
+            className={styles.headerEffect}
+          >
+            <Box>1</Box>
+           
+            {/* <Typography>right filtter</Typography> */}
           </Grid>
         </Box>
       </Grid>

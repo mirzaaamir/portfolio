@@ -42,40 +42,22 @@ const Services = () => {
       alignItems="stretch"
       rowGap={10}
     >
-
       <Typography
-      gridColumn={4}
+        gridColumn={4}
         className={styles.headingOne}
-        sx={{ display: "flex", justifyContent: "center",  }}
+        sx={{ display: "flex", justifyContent: "center" }}
       >
-       Services
+        Services
       </Typography>
-      <Grid container columnGap={{ sm: 4, md: 4,lg:4,xl:8 }} rowGap={4} columns={{ sm: 6, md: 12,lg:12,xl:12 }} sx={{margin:"12px 0px"}}>
-        <Card   className={styles.servicesCard}>
-          <CardContent>
-            <Typography
-              sx={{ fontSize: 14 }}
-              color="text.secondary"
-              gutterBottom
-            >
-              Word of the Day
-            </Typography>
-            <Typography variant="h5" component="div">
-              hello
-            </Typography>
-            <Typography sx={{ mb: 1.5 }} color="text.secondary">
-              adjective
-            </Typography>
-            <Typography variant="body2">
-              well meaning and kindly.
-              <br />
-              {'"a benevolent smile"'}
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size="small">Learn More</Button>
-          </CardActions>
-        </Card>
+      <Grid
+        container
+        columnGap={{ sm: 4, md: 4, lg: 4, xl: 8 }}
+        rowGap={4}
+        columns={{ sm: 6, md: 12, lg: 12, xl: 12 }}
+        sx={{ margin: "12px 0px" }}
+        display="flex"
+        justifyContent="center"
+      >
         <Card className={styles.servicesCard}>
           <CardContent>
             <Typography
@@ -176,7 +158,31 @@ const Services = () => {
             <Button size="small">Learn More</Button>
           </CardActions>
         </Card>
-       
+        <Card className={styles.servicesCard}>
+          <CardContent>
+            <Typography
+              sx={{ fontSize: 14 }}
+              color="text.secondary"
+              gutterBottom
+            >
+              Word of the Day
+            </Typography>
+            <Typography variant="h5" component="div">
+              hello
+            </Typography>
+            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+              adjective
+            </Typography>
+            <Typography variant="body2">
+              well meaning and kindly.
+              <br />
+              {'"a benevolent smile"'}
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">Learn More</Button>
+          </CardActions>
+        </Card>
       </Grid>
     </Grid>
   );

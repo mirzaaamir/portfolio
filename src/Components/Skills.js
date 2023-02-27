@@ -32,7 +32,7 @@ const Skills = () => {
         Skills
       </Typography>
       <Grid
-        style={{ padding: "96px 66px" }}
+        style={{ padding: "16px 16px",display:"flex",justifyContent:"center" }}
         container
         columnGap={{ sm: 4, md: 6, lg: 6, xl: 8 }}
         rowGap={4}

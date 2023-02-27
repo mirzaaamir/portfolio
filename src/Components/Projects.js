@@ -34,6 +34,8 @@ const Projects = () => {
         rowGap={4}
         columns={{ sm: 6, md: 8, lg: 8, xl: 16 }}
         sx={{ margin: "12px 0px" }}
+        display="flex"
+        justifyContent="center"
       >
         <Card className={styles.projectsCard} sx={{ maxWidth: 345 }}>
           {/* <CardActionArea>
