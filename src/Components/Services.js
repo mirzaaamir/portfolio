@@ -44,7 +44,7 @@ const Services = () => {
     >
       <Typography
         gridColumn={4}
-        className={styles.headingOne}
+        className={styles.portfolioMainHeading}
         sx={{ display: "flex", justifyContent: "center" }}
       >
         Services

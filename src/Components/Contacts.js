@@ -2,6 +2,10 @@ import { Button, Grid, TextField, Typography } from "@mui/material";
 import React from "react";
 import styles from "@/styles/Home.module.css";
 import { Box } from "@mui/system";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import PhoneIcon from "@mui/icons-material/Phone";
 const Contacts = () => {
   return (
     <Grid
@@ -11,19 +15,50 @@ const Contacts = () => {
       columns={{ sm: 5, md: 5, lg: 5, xl: 5 }}
       container
     >
+      <Typography
+        gridColumn={4}
+        className={styles.portfolioMainHeading}
+        sx={{ display: "flex", justifyContent: "center" }}
+      >
+        <span className={styles.setContact}>Get In Touch_</span>
+      </Typography>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid container xs={12} sm={6}>
-          <Box display="grid" gridTemplateColumns="1fr 2fr" gridAutoRows="50px">
-            <Typography>phone</Typography>
-            <Typography>0307-6373865</Typography>
-            <Typography>Skype:</Typography>
-            <Typography>*************</Typography>
-            <Typography>Email:</Typography>
-            <Typography>mirzaaamir157@gmail.com</Typography>
-            <Typography>Linkedin:</Typography>
-            <Typography>mirzaaamir</Typography>
-            <Typography>Github:</Typography>
-            <Typography>mirzaaamir</Typography>
+          <Box display="grid" gridTemplateColumns="100px 1fr" gridAutoRows="50px">
+            <PhoneIcon />
+            {/* <Typography component="h3" className={styles.contactPropertyName}>
+              phone
+            </Typography> */}
+            <Typography className={styles.contactValueName}>
+              92-307-6373865
+            </Typography>
+            {/* <Typography className={styles.contactPropertyName}>
+              Skype
+            </Typography>
+            <Typography className={styles.contactValueName}>
+              *************
+            </Typography> */}
+            <EmailIcon />
+            {/* <Typography className={styles.contactPropertyName}>
+              Email
+            </Typography> */}
+            <Typography className={styles.contactValueName}>
+              mirzaaamir157@gmail.com
+            </Typography>
+            <LinkedInIcon />
+            {/* <Typography className={styles.contactPropertyName}>
+              Linkedin
+            </Typography> */}
+            <Typography className={styles.contactValueName}>
+              mirzaaamir
+            </Typography>
+            <GitHubIcon />
+            {/* <Typography className={styles.contactPropertyName}>
+              Github
+            </Typography> */}
+            <Typography className={styles.contactValueName}>
+              mirzaaamir
+            </Typography>
           </Box>
         </Grid>
 
@@ -38,15 +73,15 @@ const Contacts = () => {
               width: "80%",
             }}
           >
-            <Typography>
-              or just write me a letter here_ rite me a letter here_
+            <Typography className={styles.contactMessage}>
+              or just write me a letter here
             </Typography>
             <TextField
               label="name"
               type="text"
               variant="outlined"
               color="primary"
-              s
+              
             />
             <TextField label="email" variant="standard" type="email" />
             <TextField
@@ -60,16 +95,16 @@ const Contacts = () => {
             <Button color="primary" variant="outlined">
               Send
             </Button>
-            <Button color="primary" variant="contained">
+            {/* <Button color="primary" variant="contained">
               Send
             </Button>{" "}
             <Button color="primary" variant="Text">
               Send
-            </Button>
+            </Button> */}
           </Box>
         </Grid>
       </Grid>
-      <Box sx={{width:"-webkit-fill-available"}}>
+      <Box sx={{ width: "-webkit-fill-available" }}>
         <Typography display="flex" justifyContent="center">
           © 2023 Mirza Aamir Rasheed, All Rights Reserved,
         </Typography>

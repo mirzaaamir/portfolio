@@ -62,7 +62,7 @@
   padding: 12px;
 }
 .skillsCard {
-  background: #363948;
+  background-color: #363948 !important;
 
   box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15),
     0px 4px 4px rgba(0, 0, 0, 0.3);
@@ -80,7 +80,7 @@
   /* max-width: 544px;
   max-height: 497px; */
 
-  background: #363948;
+  background-color: #363948 !important;
   border-radius: 4px;
 
   /* Inside auto layout */
@@ -109,4 +109,156 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+}
+.headerButton {
+  color: #ffffff;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+.headerTitle {
+  color: #ffffff;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+}
+.headerJobTitle {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  /* identical to box height, or 129% */
+
+  text-align: center;
+
+  /* Secondary */
+
+  color: #ffffff;
+}
+.headerDescription {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+
+  /* Secondary Color */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.portfolioMainHeading {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 64px;
+  /* or 67% */
+
+  text-decoration-line: underline;
+
+  /* on primary */
+
+  color: #ffffff;
+}
+
+.contactPropertyName {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  /* or 122% */
+
+  color: #ffffff;
+}
+.contactValueName {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+
+  color: #ffffff;
+}
+.contactMessage {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  /* or 122% */
+
+  color: #ffffff;
+}
+.contactInput {
+  box-sizing: border-box;
+  background: #363948;
+  /* Secondary Color */
+
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+/* media queries for mobile screen */
+
+@media (max-width: 580px) {
+  .headerButton {
+    /* width: 50%!important; */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 32px;
+  }
+  .headerTitle {
+    font-size: 36px;
+    line-height: 32px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .headerJobTitle {
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .headerDescription {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .setMarginTop {
+    margin-top: 24px;
+  }
+
+  .portfolioMainHeading {
+    font-size: 64px;
+    line-height: 32px;
+  }
+  .setContact {
+    font-size: 42px;
+    line-height: 32px;
+  }
+  .contactPropertyName {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contactValueName {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }

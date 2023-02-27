@@ -22,7 +22,7 @@ const Projects = () => {
       <Typography
         gridColumn={4}
         variant="h1"
-        className={styles.headingOne}
+        className={styles.portfolioMainHeading}
         sx={{ display: "flex", justifyContent: "center" }}
       >
         Projects
