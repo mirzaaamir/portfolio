@@ -220,45 +220,45 @@
 @media (max-width: 580px) {
   .headerButton {
     /* width: 50%!important; */
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 32px;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 32px !important;
   }
   .headerTitle {
-    font-size: 36px;
-    line-height: 32px;
-    display: flex;
-    justify-content: flex-start;
+    font-size: 36px !important;
+    line-height: 32px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
   }
 
   .headerJobTitle {
-    font-size: 20px;
-    line-height: 26px;
-    display: flex;
-    justify-content: flex-start;
+    font-size: 20px !important;
+    line-height: 26px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
   }
   .headerDescription {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 14px !important;
+    line-height: 26px !important;
   }
   .setMarginTop {
-    margin-top: 24px;
+    margin-top: 24px !important;
   }
 
   .portfolioMainHeading {
-    font-size: 64px;
-    line-height: 32px;
+    font-size: 64px !important;
+    line-height: 32px !important;
   }
   .setContact {
-    font-size: 42px;
-    line-height: 32px;
+    font-size: 42px !important;
+    line-height: 32px !important;
   }
   .contactPropertyName {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 18px !important;
+    line-height: 22px !important;
   }
   .contactValueName {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 18px !important;
+    line-height: 22px !important;
   }
 }
