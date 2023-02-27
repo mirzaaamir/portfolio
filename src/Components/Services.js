@@ -83,7 +83,9 @@ const Services = () => {
             <Button size="small">Learn More</Button>
           </CardActions>
         </Card>
-        <Card className={styles.servicesCard}>
+        <Card
+        
+        className={styles.servicesCard}>
           <CardContent>
             <Typography
               sx={{ fontSize: 14 }}

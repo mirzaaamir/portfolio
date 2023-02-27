@@ -35,7 +35,7 @@
   text-decoration-line: underline;
 }
 .servicesCard {
-  background-color: #363948;
+  background-color: #363948 !important;
   border-radius: 4px;
   /* display: flex;
   flex-direction: column;
