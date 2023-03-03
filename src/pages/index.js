@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
+import { Work_Sans } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import Header from "@/Components/Header";
 import Services from "@/Components/Services";
@@ -9,8 +9,9 @@ import Projects from "@/Components/Projects";
 import Blogs from "@/Components/Blogs";
 import Contacts from "@/Components/Contacts";
 import { Grid, Item } from "@mui/material";
+import { Box } from "@mui/system";
 
-const inter = Inter({ subsets: ["latin"] });
+const WorkSans = Work_Sans({ subsets: ["latin"], variable:'--font-sans' });
 
 export default function Home() {
   return (
@@ -21,13 +22,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <Header />
-        <Services />
-        <Skills />
-        <Projects />
-        {/* <Blogs /> */}
-        <Contacts />
+      <main className={`${WorkSans.variable} font-sans`}>
+        <Box className={styles.main}>
+          <Header />
+          <Services />
+          <Skills />
+          <Projects />
+          {/* <Blogs /> */}
+          <Contacts />
+        </Box>
       </main>
     </>
   );
