@@ -69,9 +69,7 @@ const Header = () => {
                 </Grid>
                 <Grid item>
                   <h1
-                    display="flex"
-                    justifyContent="center"
-                    className={styles.headerJobTitle}
+                    className={`${styles.headerJobTitle} ${styles.displayCenter}`}
                   >
                     JavaScript Developer
                   </h1>
