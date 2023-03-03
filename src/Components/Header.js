@@ -59,32 +59,29 @@ const Header = () => {
                 className={styles.setMarginTop}
               >
                 <Grid item mb={3}>
-                  <Typography
+                  <h1
                     className={styles.headerTitle}
-                    component="h1"
                     display="flex"
                     justifyContent="center"
                   >
                     Mirza Aamir
-                  </Typography>
+                  </h1>
                 </Grid>
                 <Grid item>
-                  <Typography
-                    component="h1"
-                    variant="h1"
+                  <h1
                     display="flex"
                     justifyContent="center"
                     className={styles.headerJobTitle}
                   >
                     JavaScript Developer
-                  </Typography>
+                  </h1>
                 </Grid>
               </Grid>
             </Box>
             <Box>
               <Grid container direction="column" mt={4}>
                 <Grid item>
-                  <Typography
+                  <p
                     component="p"
                     className={styles.headerDescription}
                     display="flex"
@@ -97,7 +94,7 @@ const Header = () => {
                     type specimen book. It has survived not only five centuries,
                     but also the leap into electronic typesetting, remaining
                     essentially unchanged. It was popularised in the 1960s
-                  </Typography>
+                  </p>
                 </Grid>
               </Grid>
             </Box>
