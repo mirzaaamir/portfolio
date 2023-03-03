@@ -30,7 +30,7 @@ const Header = () => {
             <Box display="flex" justifyContent="center">
               <Grid
                 container
-                columnGap={{xs:0,md:8}}
+                columnGap={{ xs: 0, md: 8 }}
                 columns={{ xs: 12, sm: 12, md: 12 }}
               >
                 <Button href="#text-buttons" className={styles.headerButton}>
@@ -52,7 +52,12 @@ const Header = () => {
             </Box>
 
             <Box>
-              <Grid container direction="column" mt={8} className={styles.setMarginTop}>
+              <Grid
+                container
+                direction="column"
+                mt={8}
+                className={styles.setMarginTop}
+              >
                 <Grid item mb={3}>
                   <Typography
                     className={styles.headerTitle}
@@ -65,10 +70,11 @@ const Header = () => {
                 </Grid>
                 <Grid item>
                   <Typography
-                    className={styles.headerJobTitle}
                     component="h1"
+                    variant="h1"
                     display="flex"
                     justifyContent="center"
+                    className={styles.headerJobTitle}
                   >
                     JavaScript Developer
                   </Typography>
@@ -79,6 +85,7 @@ const Header = () => {
               <Grid container direction="column" mt={4}>
                 <Grid item>
                   <Typography
+                    component="p"
                     className={styles.headerDescription}
                     display="flex"
                     justifyContent="center"
